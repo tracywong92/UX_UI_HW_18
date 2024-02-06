@@ -1,0 +1,265 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  Margin: 0; 
+  padding: 0;
+  font-size: 16px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  padding: 30px 10%;
+}
+
+
+h1, h2, h3 {
+  margin: 8px;
+  padding: 8px;
+  color: 1D1D1D;
+}
+
+
+h1 {
+  margin-top: 80px;
+    font-weight: 100;
+  font-size: 90px;
+}
+
+h2 {
+  margin-top: 48px;
+  font-weight: 100;
+  font-size: 50px;
+}
+
+
+p {
+  font-size: 20px;
+  line-height: 32px;
+}
+
+main { 
+  margin: 0 auto;
+  max-width: 1280px;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 109px;
+}
+
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-left: 10%;
+  padding-right: 10%;
+  background-color: #323232;
+}
+
+
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px 20px;
+  align-items: end;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-weight: 300;
+  color: white;
+}
+
+
+nav ul li a:hover {
+  transition: .3s;
+  background-color: #4e885d;
+  font-weight: 900;
+  transform: scale(5,5);
+  border-radius: 30px;
+  padding: 12px 30px;
+}
+
+button {
+  border: none;
+  background-color: white;
+  padding: 12px 30px;
+  border-radius: 30px;
+  color: #323232;
+  font-weight: 600;
+}
+
+button:hover {
+  transition: .3s;
+  background-color: #4e885d;
+  font-weight: 900;
+  transform: scale(1.2,1.2);
+  color: white;
+}
+
+.aboutcontainer { 
+  display: flex;
+  height: 600px;
+  padding: 25px;
+  margin-left: 20px;
+  margin-right: 20px;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  gap: 32px;
+} 
+
+  
+
+.hero-paragraph {
+  background-color: #F1EBEB;
+  color: #1D1D1D;
+  font-weight: 20;
+  padding-top: 80px;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-bottom: 80px;
+  font-size: 30px;
+  line-height: 40px;
+  
+}
+
+
+.heroPic {
+  height: 600px;
+  padding: 25px;
+  border-radius: 0 30px 0 0;
+}
+
+.design-Philosophy { 
+  height: 600px;
+  padding: 25px;
+  margin-left: 20px;
+  margin-right: 20px;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.design-Philosophy ul {
+  font-size: 20px;
+}
+
+.section2 {
+  display: flex;
+  height: auto;
+  padding: 25px;
+  margin-left: 20px;
+  margin-right: 20px;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  gap: 32px;
+
+}
+
+.SecondaryPic {
+  width: 500px;
+  height: 400px;
+}
+
+#interest-container {
+  display: grid;
+  height: 500px;
+  padding: 16px;
+  flex-wrap: 0 2px;
+  background-repeat: no-repeat;
+  justify-content: space-between;
+  align-content: space-between;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: 
+  "badminton badminton travel travel"
+  "badminton badminton reading business"
+  "anime pet vball business"
+  ;
+}
+
+.categoryGridArea { 
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: auto;
+  margin: 8px;
+}
+
+#badminton {
+  grid-area: badminton;
+  background-image: url("../Images/badminton.png"); 
+
+}
+
+#travel {
+  grid-area: travel;
+  background-image: url("../Images/travel.png");
+  
+}
+
+#reading {
+  grid-area: reading;
+  background-image: url("../Images/reading.png");
+ 
+}
+
+#business {
+  grid-area: business;
+  background-image: url("../Images/business1.png");
+
+}
+
+#anime {
+  grid-area: anime;
+  background-image: url("../Images/anime.png");
+
+}
+
+#pet {
+  grid-area: pet;
+  background-image:url("../Images/pet.png");
+ 
+}
+
+#vball { 
+  grid-area: vball;
+  background-image: url("../Images/vball.png");
+
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  padding: 30px;
+  padding-bottom: 30px;
+  padding-left: 10%;
+  gap: 24px;
+  padding-right: 10%;
+  background-color: black;
+  text-align: center;
+  align-content: center;
+  color: white;
+}
+
+
+@media all and (max-width: 600px) {
+  body {
+    .aboutcontainer {
+      display: flex;
+      flex-direction: column;  
+      width: 100%;}    
+
+      #interest-container {
+        display: flex;
+        flex-direction: column; 
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+
